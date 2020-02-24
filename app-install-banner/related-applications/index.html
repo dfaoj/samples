@@ -17,7 +17,7 @@ limitations under the License.
 
 <html>
   <head>
-    <title>Web App Install Banner: Related Apps (Android currently) Sample</title>
+    <title>CNU Android LOC App Install Banner Sample</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/samples/styles/main.css">
     <link rel="manifest" href="manifest.json">
@@ -40,15 +40,5 @@ limitations under the License.
 
     <p>To see if this example works, come back in another day and you will see the banner.</p>
     <p>For testing we encourage you to force the banner to appear by setting the chrome://flags/#bypass-app-banner-engagement-checks flag.</p>
-    <script> 
-      window.addEventListener('load', function() {
-  
-        var outputElement = document.getElementById('output');
-               
-        window.addEventListener('beforeinstallprompt', function(e) {
-          outputElement.textContent = 'beforeinstallprompt Event fired';
-        });
-      });
-    </script>
   </body>
 </head>
